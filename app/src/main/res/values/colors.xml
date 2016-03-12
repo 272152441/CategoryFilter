@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="gray_light">#ffeaeaea</color>
+    <color name="filter_bottom_bg">#99000000</color>
+    <color name="group_select_bg">#F2F2F2</color>
+    <color name="group_pressed_bg">#D2D2D2</color>
+    <color name="category_list_division">#E9E9E9</color>
+    <color name="filter_text_white">#ffffff</color>
+    <color name="filter_text_black">#404040</color>
+    <color name="filter_btn_check">#4D7AFB</color>
+    <color name="filter_btn_normal">#ffffff</color>
+    <color name="filter_btn_presssed">#0339D6</color>
+
+
+
+
+</resources>
