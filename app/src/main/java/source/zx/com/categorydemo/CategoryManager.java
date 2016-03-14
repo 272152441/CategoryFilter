@@ -1,8 +1,6 @@
 package source.zx.com.categorydemo;
 
-import android.content.Context;
 import android.view.View;
-import android.widget.Button;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -49,14 +47,14 @@ public class CategoryManager implements View.OnClickListener,CateFilterStatusLis
     }
 
     private void setBtnSelect(View btn){
-        if(btn instanceof  CheckView){
-            ((CheckView) btn).setChecked(true);
+        if(btn instanceof TitleCheckView){
+            ((TitleCheckView) btn).setChecked(true);
         }
     }
 
     private void remBtnSelect(View btn){
-        if(btn instanceof  CheckView){
-            ((CheckView) btn).setChecked(false);
+        if(btn instanceof TitleCheckView){
+            ((TitleCheckView) btn).setChecked(false);
         }
 
     }

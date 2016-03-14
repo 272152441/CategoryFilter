@@ -7,7 +7,8 @@
     <color name="gray_light">#ffeaeaea</color>
     <color name="filter_bottom_bg">#99000000</color>
     <color name="group_select_bg">#F2F2F2</color>
-    <color name="group_pressed_bg">#D2D2D2</color>
+    <color name="group_pressed_bg">#bebebe</color>
+    <color name="group_check_bg">#D2D2D2</color>
     <color name="category_list_division">#E9E9E9</color>
     <color name="filter_text_white">#ffffff</color>
     <color name="filter_text_black">#404040</color>

@@ -15,7 +15,7 @@ import android.widget.TextView;
 /**
  * TODO: document your custom view class.
  */
-public class CheckView extends LinearLayout implements Checkable {
+public class TitleCheckView extends LinearLayout implements Checkable {
 
     private TextView checkText;
 
@@ -30,17 +30,17 @@ public class CheckView extends LinearLayout implements Checkable {
     private Animation rotateRevAnim;
 
 
-    public CheckView(Context context) {
+    public TitleCheckView(Context context) {
         super(context);
         initInternalView(context);
     }
 
-    public CheckView(Context context, AttributeSet attrs) {
+    public TitleCheckView(Context context, AttributeSet attrs) {
         super(context, attrs);
         initInternalView(context);
     }
 
-    public CheckView(Context context, AttributeSet attrs, int defStyle) {
+    public TitleCheckView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         initInternalView(context);
     }

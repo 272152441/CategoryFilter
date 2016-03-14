@@ -109,12 +109,12 @@ public class CategoryItemHelper implements AdapterView.OnItemClickListener {
             int temGroupIndex = groupList.getCheckedItemPosition();
             if (temGroupIndex != preGroupIndex || tempChildIndex != preChildIndex) {
 
-
                 CategoryGroupBean itemGroup = (CategoryGroupBean) groupAdapter.getItem(preGroupIndex);
                 childAdapter.setDataList(itemGroup.getCateChildList());
                 childAdapter.notifyDataSetChanged();
                 childList.setSelection(0);
-                childList.setItemChecked(preChildIndex, true);
+                childList.setItemChecked(preChildIndex,true);
+
             }
         }
     }
@@ -160,8 +160,9 @@ public class CategoryItemHelper implements AdapterView.OnItemClickListener {
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         if (parent.getId() == R.id.group_list) {
             CategoryGroupBean itemGroup = (CategoryGroupBean) groupAdapter.getItem(position);
-            preGroupIndex = position;
             // 如果子分类的list被锁住以及，有子分类，但是当前这个item 子分类的数据为空
+
+
             if (isBlockChildList() || !itemGroup.hasChildList()) {
                 preGroupIndex = position;
                 if (cateFilterSelListener != null) {
@@ -174,11 +175,16 @@ public class CategoryItemHelper implements AdapterView.OnItemClickListener {
                     temGroupIndex = position;
                     tempGroupBean = itemGroup;
 
-                    // TODO 进行切换逻辑处理
-                    childAdapter.setDataList(itemGroup.getCateChildList());
-                    childAdapter.notifyDataSetChanged();
-                    childList.setSelection(0);
-                    childList.clearChoices();
+                    if (preGroupIndex == temGroupIndex) {
+                        refreshChangeChoice();
+                    } else {
+                        childAdapter.setDataList(itemGroup.getCateChildList());
+                        childAdapter.notifyDataSetChanged();
+                        childList.setSelection(0);
+                        childList.clearChoices();
+                    }
+
+
                 }
             }
 

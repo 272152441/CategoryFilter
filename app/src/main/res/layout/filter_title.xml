@@ -3,13 +3,13 @@
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <source.zx.com.categorydemo.CheckView
+    <source.zx.com.categorydemo.TitleCheckView
         android:id="@+id/filter_title_f"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:background="@android:color/transparent"
         android:layout_height="match_parent" />
-    <source.zx.com.categorydemo.CheckView
+    <source.zx.com.categorydemo.TitleCheckView
         android:id="@+id/filter_title_s"
         android:layout_width="0dp"
         android:layout_weight="1"
